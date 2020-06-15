@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* 화면 로딩 시 CSS 기초 화면 설정 */
 /* 구글폰트에서 나눔고딕체 사용하기 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
@@ -10,6 +11,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     padding: 0;
     border: 0;
     outline: 0;
+    /* 기본 16px */
     font-size: 100%;
     /* 부모 태그 기준 */
     vertical-align: baseline;
@@ -26,7 +28,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-nav ul, li { list-style: none; }
+nav ul, li { list-style-type: none; }
 
 a {
     margin: 0;
@@ -59,5 +61,6 @@ input, textarea {
     vertical-align: top;
     border-radius: 0;
     box-sizing: content-box;
+    /* OS 기본 테마 설정 사용금지 */
     appearance: none;
 }
